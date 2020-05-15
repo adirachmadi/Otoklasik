@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".ui.activity.login.LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb_daftar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/tb_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="50dp">
+
+            <ImageView
+                android:layout_width="@dimen/logo_vertical_width"
+                android:layout_height="@dimen/logo_vertical_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo_adi" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_regis_username_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/HintText"
+                app:errorTextAppearance="@style/ErrorText"
+                android:paddingBottom="5dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_regis_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/username"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_regis_password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/HintText"
+                app:errorTextAppearance="@style/ErrorText"
+                app:passwordToggleEnabled="true"
+                android:paddingBottom="5dp"
+                >
+
+                n<com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_regis_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/password"
+                android:textSize="16sp"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="14dp"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_regis_konfirmasi_password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/HintText"
+                app:errorTextAppearance="@style/ErrorText"
+                android:paddingBottom="5dp"
+                app:passwordToggleEnabled="true"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_regis_konfirmasi_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/konfirmasi_password"
+                    android:textSize="16sp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="14dp"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_regis_email_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/HintText"
+                app:errorTextAppearance="@style/ErrorText"
+                android:paddingBottom="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_regis_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Email"
+                    android:textSize="16sp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="14dp"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sudah punya akun? "
+                    android:paddingVertical="5dp"
+                    android:layout_marginBottom="20dp"/>
+                <TextView
+                    android:id="@+id/btn_go_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:paddingVertical="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:clickable="true"
+        android:id="@+id/btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreen"
+        android:text="REGISTER"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/text_size_button"
+        android:textStyle="bold"
+        android:focusable="true" />
+
+</RelativeLayout>

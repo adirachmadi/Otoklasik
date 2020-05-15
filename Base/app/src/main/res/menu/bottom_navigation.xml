@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_beranda"
+        android:icon="@drawable/ic_home"
+        android:title="@string/title_beranda" />
+    <item
+        android:id="@+id/navigation_tambah_produk"
+        android:icon="@drawable/ic_circle_plus"
+        android:title="@string/title_tambah_produk" />
+    <item
+        android:id="@+id/navigation_about_us"
+        android:icon="@drawable/ic_ketentuan"
+        android:title="@string/title_about" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/title_profile" />
+</menu>

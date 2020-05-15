@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Otoklasik</string>
+    <string name="title_beranda">Beranda</string>
+    <string name="title_activity">Activitas</string>
+    <string name="title_ketentuan">Ketentuan</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="copyright">Copyright Ⓒ Otomotif Klasik - 2020</string>
+    <string name="bidder">bidder</string>
+    <string name="slogan">Aman, Terjamin, dan Terpercaya</string>
+    <string name="name">OTOKLASIK</string>
+
+    <!--    About Us-->
+    <string name="about_us">Tentang Kami</string>
+    <string name="tujuan_aplikasi">Aplikasi dikembangkan dengan tujuan untuk memudahkan para pecinta otomotif klasik untuk mencari barang ataupun kendaraan klasik</string>
+    <string name="pengembang">Developer</string>
+    <string name="developer">Rachmadi Dwima Ghani</string>
+    <string name="tujuan_khusus">Adapun tujuan khusus dari pembuatan aplikasi ini adalah untuk memenuhi kurikulum dari mata kuliah Mobile Computing di Program Studi Teknik Informatika Universitas Lampung</string>
+
+    <string name="custom_dialog">This is custom dialog</string>
+    <string name="example">Example</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="lupa_password">Lupa Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="icon">icon</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="ubah_password">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="password_lama">Old Password</string>
+    <string name="password_baru">New Password</string>
+    <string name="konfirmasi_password">Confirm Password</string>
+    <string name="save">Save</string>
+    <string name="popup_title">Popup Title..</string>
+    <string name="popup_message">Write message here..</string>
+    <string name="title_tambah_produk">Tambah Produk</string>
+    <string name="title_about">Tentang Kami</string>
+    <string name="title_activity_a">aActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/layouttb"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tentang Kami"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingEnd="44dp"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/ns_content_aboutUs"
+        android:layout_below="@+id/layouttb"
+        android:layout_above="@id/layout_copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:layout_marginVertical="35dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo_adi"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tujuan"
+                style="@style/h2TextTheme"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tujuan_aplikasi"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tujuan Khusus"
+                style="@style/h2TextTheme"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tujuan_khusus"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pengembang"
+                style="@style/h2TextTheme"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adapun developer dari aplikasi ini adalah :"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/developer"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/layout_copyright"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:paddingVertical="@dimen/activity_vertical_margin"
+        android:text="@string/copyright"/>
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:cardBackgroundColor="@color/colorGreen"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="20dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="ceklis.json"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_popup_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/popup_title"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_popup_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/popup_message"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_ok_regis"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_button_white"
+                android:layout_marginStart="38dp"
+                android:layout_marginEnd="38dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Ok"
+                android:textStyle="bold"
+                android:textColor="@color/colorGreen"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

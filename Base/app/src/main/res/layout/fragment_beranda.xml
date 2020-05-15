@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ProgressBar
+        android:id="@+id/pb_beranda"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/layouttb"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Daftar Barang"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_below="@id/layouttb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/slider_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:auto_cycle="true"
+                    android:background="@drawable/img_no_connect"
+                    app:period="1000"
+                    app:delay="0"
+                    app:placeholder="@color/colorWhite"
+                    app:error_image="@drawable/img_no_connect"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@color/colorGrey"
+                    android:background="@color/colorGrey"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="Rekomendasi Barang untukmu"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list_barang"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    tools:listitem="@layout/layout_list_barang"/>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

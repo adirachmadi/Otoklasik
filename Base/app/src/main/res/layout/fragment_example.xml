@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.example.ExampleFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tb_aktivitas"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:cardElevation="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/btn_riwayat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_help"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"/>
+            <TextView
+                android:layout_toLeftOf="@id/btn_riwayat"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/example"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/pb_aktivitas"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tb_aktivitas">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_aktivitas"
+            android:layout_below="@id/tb_aktivitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"/>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

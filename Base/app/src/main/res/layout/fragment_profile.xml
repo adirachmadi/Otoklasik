@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.ProfileFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:background="@drawable/bg_profile">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <ImageView
+                            android:id="@+id/lgo"
+                            android:layout_height="100dp"
+                            android:layout_width="100dp"
+                            android:src="@drawable/logo2"
+                            android:tint="@color/colorWhite"
+                            android:layout_centerVertical="true"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/lgo"
+                            android:text="OTOKLASIK"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="30sp"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/mulibold"/>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+                    <TextView
+                        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profile"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="24sp"/>
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_person_circle" />
+
+        <TextView
+            android:id="@+id/tv_nama_user_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Rachmadi Dwima"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_email_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="rachmadwima@gmail.com"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_logout_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:layout_marginTop="30dp"
+        android:text="Logout"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"/>
+
+</RelativeLayout>

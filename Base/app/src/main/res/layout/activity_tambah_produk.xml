@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".ui.activity.login.LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb_tambah_produk"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/tb_tambah_produk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="50dp">
+
+            <ImageView
+                android:layout_width="@dimen/logo_vertical_width"
+                android:layout_height="@dimen/logo_vertical_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo_adi" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_judul_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/HintText"
+                app:errorTextAppearance="@style/ErrorText"
+                android:paddingBottom="5dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_judul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Judul"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_harga_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/HintText"
+                app:errorTextAppearance="@style/ErrorText"
+                app:passwordToggleEnabled="true"
+                android:paddingBottom="5dp"
+                >
+
+                n<com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_harga"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Harga"
+                android:textSize="16sp"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="14dp"
+                android:inputType="number"
+                android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_deskripsi_layout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxBackgroundMode="outline"
+                app:hintTextAppearance="@style/HintText"
+                app:errorTextAppearance="@style/ErrorText"
+                android:paddingBottom="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_deskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Deskripsi"
+                    android:gravity="start"
+                    android:textSize="16sp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="14dp"
+                    android:inputType="textMultiLine"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_tambah_produk_validasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Produk"
+        android:background="@color/colorGreen"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
